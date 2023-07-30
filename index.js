@@ -24,11 +24,7 @@ const { userPlanRoute } = require("./Routes/plan/userPlan.route.js");
 const { auth } = require("./Middleware/authenticator.js");
 
 //CORS - middleware
-app.use(
-  cors({
-    origin: "*",
-  })
-);
+app.use(cors());
 
 app.use(express.json());
 
